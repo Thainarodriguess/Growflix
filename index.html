@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growflix - Assista agora</title>
+    
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/estilo.css">
+    
+    <style>
+
+        .banner-entrada {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.9) 100%), 
+                        url('assets/imagens/banner-initial.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+        }
+
+       
+        .accordion-button::after {
+            display: none !important; 
+        }
+        
+        .custom-accordion-btn {
+            background-color: #2d2d2d !important;
+            color: white !important;
+            border: none !important;
+            box-shadow: none !important;
+            padding: 24px !important;
+            font-size: 1.5rem !important;
+            transition: background-color 0.3s;
+        }
+
+        .custom-accordion-btn:hover {
+            background-color: #414141 !important;
+        }
+
+        .custom-accordion-body {
+            background-color: #2d2d2d !important;
+            color: white !important;
+            font-size: 1.3rem;
+            border-top: 2px solid black !important;
+            padding: 24px !important;
+        }
+
+        .accordion-item {
+            background-color: transparent !important;
+            border: none !important;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <header class="banner-entrada d-flex align-items-center justify-content-center text-center">
+        <div class="container position-relative">
+            <img src="assets/imagens/logo-growflix.svg" alt="Growflix" class="mb-4" style="width: 180px;">
+            <h1 class="display-3 fw-bold mb-3">Growcasts, webinars e muito mais. Sem limites.</h1>
+            <p class="fs-4 mb-4">Assista onde quiser</p>
+            <div class="d-flex flex-column align-items-center">
+                <p class="mb-3">Pronto para assistir?</p>
+                <div style="max-width: 450px; width: 100%;">
+                    <a href="home.html" class="btn btn-danger btn-lg w-100 py-3 fw-bold fs-3" style="background-color: #E50914 !important; border: none;">
+                        Vamos lá!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <hr class="border-secondary border-4 opacity-50 m-0">
+
+    <section class="py-5 bg-black">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
+                    <h2 class="display-4 fw-bold">Aproveite na TV.</h2>
+                    <p class="fs-4">Assista em Smart TVs, PlayStation, Xbox, Chromecast e outros dispositivos.</p>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                    <img src="assets/imagens/tela-tv-dia-dev.png" alt="TV" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-secondary border-4 opacity-50 m-0">
+
+    <section class="py-5 bg-black">
+        <div class="container py-5">
+            <div class="row align-items-center flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-6 text-center">
+                    <img src="assets/imagens/devices.png" alt="Dispositivos" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
+                    <h2 class="display-4 fw-bold">Assista quando quiser.</h2>
+                    <p class="fs-4">Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-secondary border-4 opacity-50 m-0">
+
+    <section class="py-5 bg-black">
+        <div class="container py-5">
+            <h2 class="display-4 fw-bold text-center mb-5">Perguntas frequentes</h2>
+            
+            <div class="accordion mx-auto" id="perguntasGrowflix" style="max-width: 800px;">
+                
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed custom-accordion-btn d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#p1">
+                            <span>O que é a Growflix?</span>
+                            <img src="assets/imagens/add.svg" alt="+" width="25">
+                        </button>
+                    </h2>
+                    <div id="p1" class="accordion-collapse collapse" data-bs-parent="#perguntasGrowflix">
+                        <div class="accordion-body custom-accordion-body">
+                            A Growflix é um serviço de streaming que oferece uma ampla variedade de conteúdos exclusivos da Growdev.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed custom-accordion-btn d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#p2">
+                            <span>Quanto custa a Growflix?</span>
+                            <img src="assets/imagens/add.svg" alt="+" width="25">
+                        </button>
+                    </h2>
+                    <div id="p2" class="accordion-collapse collapse" data-bs-parent="#perguntasGrowflix">
+                        <div class="accordion-body custom-accordion-body">
+                            Assista à Growflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed custom-accordion-btn d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#p3">
+                            <span>Onde posso assistir?</span>
+                            <img src="assets/imagens/add.svg" alt="+" width="25">
+                        </button>
+                    </h2>
+                    <div id="p3" class="accordion-collapse collapse" data-bs-parent="#perguntasGrowflix">
+                        <div class="accordion-body custom-accordion-body">
+                            Você pode assistir em qualquer lugar, a qualquer hora.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+                <p class="fs-4">Pronto para assistir?</p>
+                <a href="home.html" class="btn btn-danger btn-lg px-5 py-3 fw-bold fs-3" style="background-color: #E50914 !important; border: none;">Vamos lá!</a>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-secondary border-4 opacity-50 m-0">
+
+    <footer class="py-5 bg-black text-secondary">
+        <div class="container py-5">
+            <p class="mb-4">Dúvidas? Ligue 0800 591 8942</p>
+            <div class="row row-cols-2 row-cols-md-4 g-3 fs-6">
+                <div class="col"><p class="mb-1">Perguntas frequentes</p></div>
+                <div class="col"><p class="mb-1">Central de Ajuda</p></div>
+                <div class="col"><p class="mb-1">Conta</p></div>
+                <div class="col"><p class="mb-1">Media Center</p></div>
+                <div class="col"><p class="mb-1">Privacidade</p></div>
+                <div class="col"><p class="mb-1">Termos de Uso</p></div>
+                <div class="col"><p class="mb-1">Entre em contato</p></div>
+            </div>
+            <p class="mt-4">Growflix Growdev</p>
+        </div>
+    </footer>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

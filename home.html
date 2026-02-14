@@ -1,0 +1,155 @@
+Entendido. Agora o código está 100% atualizado: todos os vídeos, incluindo o primeiro do Banner e o primeiro da primeira fileira, agora abrem o link de Agilidade (2c8VOBZ160Y).
+
+Aqui está o código completo:
+
+HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growflix - Home</title>
+    
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    
+    <style>
+        body { background-color: #000; color: #fff; overflow-x: hidden; font-family: Arial, sans-serif; }
+        .navbar-growflix { background-color: rgba(0, 0, 0, 0.9); padding: 15px 4%; z-index: 1050; }
+        .nav-link { color: #e5e5e5 !important; font-size: 0.9rem; margin-left: 15px; }
+        .nav-link:hover { color: #b3b3b3 !important; }
+
+        .hero-home {
+            height: 80vh;
+            background: linear-gradient(to right, #000 10%, rgba(0,0,0,0) 60%),
+                        url('assets/imagens/growcast-01.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 0 4%;
+            margin-top: 60px;
+        }
+
+        .video-section { padding: 40px 4% 0 4%; }
+        .section-title { font-size: 1.4rem; font-weight: bold; margin-bottom: 20px; color: #fff; }
+        .section-title span { font-size: 1rem; color: #aaa; margin-left: 10px; }
+        
+        .video-card { cursor: pointer; transition: transform 0.3s; border-radius: 4px; overflow: hidden; margin-bottom: 10px; }
+        .video-card:hover { transform: scale(1.1); z-index: 10; }
+        .video-card img { width: 100%; height: auto; display: block; }
+
+        .modal-content { background-color: #000 !important; }
+        .btn-close-white { position: absolute; right: 25px; top: 25px; z-index: 2000; filter: invert(1); }
+        
+        section { scroll-margin-top: 80px; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-growflix fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/imagens/logo-growflix.svg" alt="Growflix" width="100">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#growcast">Growcast[episódios]</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#webinar">Webinar em Flutter</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#uxui">Jornada UX/UI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#diversos">Diversos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero-home">
+        <div class="hero-content w-50">
+            <h1 class="display-3 fw-bold mb-4">EPISÓDIO 01 <br> E O QA COM ISSO?</h1>
+            <p class="fs-5 mb-4">Software QA Engineer no Itaú</p>
+            <button class="btn btn-light btn-lg px-4 py-2 fw-bold" onclick="abrirPlayer('2c8VOBZ160Y')">▶ Assistir</button>
+        </div>
+    </section>
+
+    <section id="growcast" class="video-section">
+        <h5 class="section-title">Growcast [Episódios] <span>►</span></h5>
+        <div class="row row-cols-2 row-cols-md-4 g-2">
+            <div class="col"><div class="video-card" onclick="abrirPlayer('2c8VOBZ160Y')"><img src="assets/imagens/growcast-01.png"></div></div>
+            <div class="col"><div class="video-card" onclick="abrirPlayer('2c8VOBZ160Y')"><img src="assets/imagens/growcast-01.png"></div></div>
+            <div class="col"><div class="video-card" onclick="abrirPlayer('2c8VOBZ160Y')"><img src="assets/imagens/growcast-01.png"></div></div>
+            <div class="col"><div class="video-card" onclick="abrirPlayer('2c8VOBZ160Y')"><img src="assets/imagens/growcast-01.png"></div></div>
+        </div>
+    </section>
+
+    <section id="webinar" class="video-section">
+        <h5 class="section-title">Webinar em Flutter <span>►</span></h5>
+        <div class="row row-cols-2 row-cols-md-4 g-2">
+            <div class="col"><div class="video-card" onclick="abrirPlayer('2c8VOBZ160Y')"><img src="assets/imagens/tela-tv-dia-dev.png"></div></div>
+            <div class="col"><div class="video-card" onclick="abrirPlayer('2c8VOBZ160Y')"><img src="assets/imagens/tela-tv-dia-dev.png"></div></div>
+            <div class="col"><div class="video-card" onclick="abrirPlayer('2c8VOBZ160Y')"><img src="assets/imagens/tela-tv-dia-dev.png"></div></div>
+            <div class="col"><div class="video-card" onclick="abrirPlayer('2c8VOBZ160Y')"><img src="assets/imagens/tela-tv-dia-dev.png"></div></div>
+        </div>
+    </section>
+
+    <section id="uxui" class="video-section">
+        <h5 class="section-title">Jornada UX/UI <span>►</span></h5>
+        <div class="row row-cols-2 row-cols-md-4 g-2">
+            <div class="col"><div class="video-card" onclick="abrirPlayer('2c8VOBZ160Y')"><img src="assets/imagens/devices.png"></div></div>
+            <div class="col"><div class="video-card" onclick="abrirPlayer('2c8VOBZ160Y')"><img src="assets/imagens/devices.png"></div></div>
+            <div class="col"><div class="video-card" onclick="abrirPlayer('2c8VOBZ160Y')"><img src="assets/imagens/devices.png"></div></div>
+            <div class="col"><div class="video-card" onclick="abrirPlayer('2c8VOBZ160Y')"><img src="assets/imagens/devices.png"></div></div>
+        </div>
+    </section>
+
+    <section id="diversos" class="video-section">
+        <h5 class="section-title">Diversos <span>►</span></h5>
+        <div class="row row-cols-2 row-cols-md-4 g-2">
+            <div class="col"><div class="video-card" onclick="abrirPlayer('2c8VOBZ160Y')"><img src="assets/imagens/banner-initial.png"></div></div>
+            <div class="col"><div class="video-card" onclick="abrirPlayer('2c8VOBZ160Y')"><img src="assets/imagens/banner-initial.png"></div></div>
+            <div class="col"><div class="video-card" onclick="abrirPlayer('2c8VOBZ160Y')"><img src="assets/imagens/banner-initial.png"></div></div>
+            <div class="col"><div class="video-card" onclick="abrirPlayer('2c8VOBZ160Y')"><img src="assets/imagens/banner-initial.png"></div></div>
+        </div>
+    </section>
+
+    <footer class="py-5 bg-black text-secondary mt-5">
+        <hr class="border-secondary opacity-25 mb-5">
+        <div class="container py-5">
+            <p class="mb-4">Dúvidas? Ligue 0800 591 8942</p>
+            <div class="row row-cols-2 row-cols-md-4 g-3 fs-6">
+                <div class="col"><p class="mb-1">Perguntas frequentes</p></div>
+                <div class="col"><p class="mb-1">Central de Ajuda</p></div>
+                <div class="col"><p class="mb-1">Conta</p></div>
+                <div class="col"><p class="mb-1">Media Center</p></div>
+                <div class="col"><p class="mb-1">Privacidade</p></div>
+                <div class="col"><p class="mb-1">Termos de Uso</p></div>
+                <div class="col"><p class="mb-1">Entre em contato</p></div>
+            </div>
+            <p class="mt-4">Growflix Growdev</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" onclick="fecharPlayer()"></button>
+                <div class="modal-body d-flex align-items-center justify-content-center p-0">
+                    <div class="ratio ratio-16x9 w-75">
+                        <iframe id="iframeVideo" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const playerModal = new bootstrap.Modal(document.getElementById('videoModal'));
+        const iframe = document.getElementById('iframeVideo');
+        function abrirPlayer(id) { iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1`; playerModal.show(); }
+        function fecharPlayer() { iframe.src = ""; }
+        document.getElementById('videoModal').addEventListener('hidden.bs.modal', fecharPlayer);
+    </script>
+</body>
+</html>
